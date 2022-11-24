@@ -1,0 +1,17 @@
+
+{% extends "home.html" %}
+{% block content %}
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <h2><i>Add Datas</i></h2>
+    <label>Name:</label>
+    <input type="text" name="name" placehplder="Enter name"><br><br>
+    <label>Description:</label>
+    <input type="text" name="desc" placehplder="Enter"><br><br>
+    <label>Year:</label>
+    <input type="text" name="year" placehplder="Enter the year"><br><br>
+    <label>Image:</label>
+    <input type="file" name="img" ><br><br>
+    <input type="submit">
+</form>
+{% endblock %}

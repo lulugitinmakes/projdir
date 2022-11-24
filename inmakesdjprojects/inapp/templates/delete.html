@@ -1,0 +1,10 @@
+{% extends 'home.html' %}
+
+{% block content %}
+<form method="POST">
+  {% csrf_token %}
+  <h5>Are you sure want to delete this?</h5>
+  <input type="submit">
+</form>
+
+{% endblock %}
